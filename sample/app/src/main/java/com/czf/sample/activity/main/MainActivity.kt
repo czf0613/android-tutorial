@@ -9,7 +9,6 @@ import com.czf.sample.activity.init.InitActivityViewModel
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
         val binding =
             DataBindingUtil.setContentView<com.czf.sample.databinding.ActivityMainBinding>(
                 this,

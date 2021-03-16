@@ -1,3 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/nav_graph" />
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/navigatorFragment">
+    <fragment
+        android:id="@+id/databaseFragment"
+        android:name="com.czf.sample.activity.navi.dbFragment.DatabaseFragment"
+        android:label="fragment_database"
+        tools:layout="@layout/fragment_database" />
+    <fragment
+        android:id="@+id/storageFragment"
+        android:name="com.czf.sample.activity.navi.localStorageFragment.StorageFragment"
+        android:label="fragment_storage"
+        tools:layout="@layout/fragment_storage" />
+    <fragment
+        android:id="@+id/networkFragment"
+        android:name="com.czf.sample.activity.navi.networkFragment.NetworkFragment"
+        android:label="fragment_network"
+        tools:layout="@layout/fragment_network" />
+    <fragment
+        android:id="@+id/navigatorFragment"
+        android:name="com.czf.sample.activity.navi.navigatorHostFragment.NavigatorFragment"
+        android:label="fragment_navigator"
+        tools:layout="@layout/fragment_navigator" >
+        <action
+            android:id="@+id/action_navigatorFragment_to_databaseFragment"
+            app:popUpToInclusive="true"
+            app:destination="@id/databaseFragment" />
+        <action
+            android:id="@+id/action_navigatorFragment_to_storageFragment"
+            app:popUpToInclusive="true"
+            app:destination="@id/storageFragment" />
+        <action
+            android:id="@+id/action_navigatorFragment_to_networkFragment"
+            app:popUpToInclusive="true"
+            app:destination="@id/networkFragment" />
+    </fragment>
+</navigation>

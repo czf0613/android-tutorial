@@ -8,7 +8,6 @@ import com.czf.sample.R
 class InitActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_init)
         val binding =
             DataBindingUtil.setContentView<com.czf.sample.databinding.ActivityInitBinding>(
                 this,

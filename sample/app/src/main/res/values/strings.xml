@@ -5,4 +5,8 @@
     <string name="clickToPlus">点击+1</string>
     <string name="nextPage">下一页</string>
     <string name="lastPage">上一页</string>
+    <string name="database">数据库演示页</string>
+    <string name="storage">本地储存演示页</string>
+    <string name="network">网络交互演示页</string>
+    <string name="navigate">视图导航器</string>
 </resources>
