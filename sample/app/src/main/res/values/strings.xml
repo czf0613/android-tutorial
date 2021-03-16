@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">SampleApplication</string>
+    <string name="showImmutable">不可变数据</string>
+    <string name="showObservable">可观察对象，双向绑定</string>
+    <string name="clickToPlus">点击+1</string>
+    <string name="nextPage">下一页</string>
+    <string name="lastPage">上一页</string>
 </resources>
