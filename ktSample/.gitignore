@@ -1,10 +1,10 @@
-*.iml
-.gradle
-/local.properties
+# Default ignored files
 /.idea
-.DS_Store
-/build
-/captures
-.externalNativeBuild
-.cxx
-local.properties
+/target
+/shelf/
+/workspace.xml
+# Datasource local storage ignored files
+/../../../../../../../:\Users\13540\Desktop\kt\coroutine\.idea/dataSources/
+/dataSources.local.xml
+# Editor-based HTTP Client requests
+/httpRequests/
